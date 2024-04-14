@@ -1,1 +1,1 @@
-<view class="content"><image class="logo" src="/static/logo.png"></image><view class="text-area"><text class="title">{{title}}</text><u-icon vue-id="8dd740cc-1" name="photo" color="#2979ff" size="28" bind:__l="__l"></u-icon></view></view>
+<view class="content"><image class="logo" src="/static/logo.png"></image><view class="text-area"><text class="title">{{title}}</text><u-icon vue-id="8dd740cc-1" name="photo" color="#2979ff" size="28" bind:__l="__l"></u-icon></view><button data-event-opts="{{[['tap',[['sayHello',['$event']]]]]}}" bindtap="__e">Say Hello</button></view>

@@ -5,6 +5,7 @@
 			<text class="title">{{title}}</text>
 			<u-icon name="photo" color="#2979ff" size="28"></u-icon>
 		</view>
+		<button @click="sayHello">Say Hello</button>
 	</view>
 </template>
 
@@ -19,12 +20,12 @@
 			}
 		},
 		onLoad() {
-			api.excute().then(res => {
-				console.log(res);
-				this.title = res.data
-			}).catch(err => {
-				console.log(err);
-			})
+			// api.excute().then(res => {
+			// 	console.log(res);
+			// 	this.title = res.data
+			// }).catch(err => {
+			// 	console.log(err);
+			// })
 		},
 		methods: {
 

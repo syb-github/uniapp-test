@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/service/index"
+    "pages/service/index",
+    "pages/login/my",
+    "pages/login/login"
   ],
   "subPackages": [],
   "window": {
@@ -19,6 +21,10 @@
       {
         "pagePath": "pages/service/index",
         "text": "服务"
+      },
+      {
+        "pagePath": "pages/login/my",
+        "text": "我的"
       }
     ]
   },

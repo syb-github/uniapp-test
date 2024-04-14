@@ -2,9 +2,12 @@ import App from './App'
 
 // #ifndef VUE3
 import Vue from 'vue'
-import uview from 'uview-ui'
 import './uni.promisify.adaptor'
+import uview from '@/uni_modules/uview-ui'
+import globalMethod from '@/api/mixin..js';
+
 Vue.use(uview)
+Vue.mixin(globalMethod)
 Vue.config.productionTip = false
 App.mpType = 'app'
 const app = new Vue({

@@ -11,6 +11,22 @@
 			"style": {
 				"navigationBarTitleText": "服务"
 			}
+		},
+		{
+			"path" : "pages/login/my",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/login/login",
+			"style" : 
+			{
+				"navigationBarTitleText" : "登录",
+				"enablePullDownRefresh" : false
+			}
 		}
 	],
 	"tabBar": {
@@ -22,6 +38,10 @@
 			{
 				"pagePath": "pages/service/index",
 				"text": "服务"
+			},
+			{
+				"pagePath": "pages/login/my",
+				"text": "我的"
 			}
 		]
 	},
@@ -31,5 +51,12 @@
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
-	"uniIdRouter": {}
+	"uniIdRouter": {},
+	// 全局引入uview组件
+	    "easycom": {
+	        "autoscan": true,
+	        "custom": {
+	            "^u-(.*)":"@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+	        }
+	    }
 }
